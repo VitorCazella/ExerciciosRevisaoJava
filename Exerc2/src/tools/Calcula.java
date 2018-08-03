@@ -12,16 +12,19 @@ public class Calcula {
 	}
 	
 	public void repete() {
-		System.out.println("Digite um número para repetir: ");
-		int x = scan.nextInt();
-		double soma = 0, num = 0, media = 0; 
-		for(int i = x; i > -1; i = i - 1) {
-			soma = soma + i;
+		double soma = 0, num = 0, media = 0;
+		int x = 0;
+		do {
+			System.out.println("Digite um nÃºmero: ");
+			x = scan.nextInt();
+			
+			soma = soma + x;
 			num++;
-			System.out.println(i);
-		}
+			 
+		} while (x != 0);
+		
 		media = soma/(num - 1);
-		System.out.println("Soma: " + soma + "\nMédia: " + media);
+		System.out.println("Soma: " + soma + "\nMï¿½dia: " + media);
 	}
 	
 }
